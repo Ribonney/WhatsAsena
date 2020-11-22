@@ -13,7 +13,7 @@ const Config = require('../config');
 
 Asena.addCommand({pattern: 'alive', fromMe: true, desc: 'Bot çalışıyor mu?'}, (async (message, match) => {
     await message.sendMessage(
-        '```Tanrı Türk\'ü Korusun. 🐺 Asena çalışıyor...```\n\n*Version:* ```'+Config.VERSION+'```\n*Telegram Grubu:* https://t.me/AsenaSupport\n*Telegram Kanalı:* https://t.me/WhatsAsena' , MessageType.text
+        '```Tanrı Türk\'ü Korusun. 🐺 Asena çalışıyor...```\n\n*Version:* ```'+Config.VERSION , MessageType.text
     );
 }));
 
